@@ -10,7 +10,7 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-	padding-left: 28vw;
+	padding-left: 27vw;
 }
 
 #closed-captions .on {
@@ -22,7 +22,7 @@ Feel free to adjust the defaults to your needs.
 }
 
 
-/* Opmaak per stem */
+/* Opmaak per stemmen en videoplaceholder */
 .voice1 {
 	font-family: "Brenner Mono";
 	font-style: Normal;
@@ -38,11 +38,32 @@ Feel free to adjust the defaults to your needs.
 }
 
 .voice3 {
-	font-family: "Brenner Mono";
+	font-family: "Brenner Mono Bold";
 	font-style: Normal;
 	font-weight: 400;
 	color: #0f4539;
+	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+  transform: translate3d(0, 0, 0);
 }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
 
 .voice4 {
 	font-family: "Brenner Mono";
@@ -51,24 +72,9 @@ Feel free to adjust the defaults to your needs.
 	color: #5c1818;
 }
 
-
 #video-placeholder {
 	display: block;
 	margin: 0 auto;
-}
-
-.test {
-	animation: type 0,5s steps(3);
-	overflow: hidden;
-}
-
-@keyframes type {
-	0% {
-		width:0ch;
-	}
-	100% {
-		width:3ch;
-	}
 }
 
 /* deel 2 tekst */
@@ -147,3 +153,7 @@ You probably want to change the styling.
 .p0.on span:nth-of-type(11) {
 	opacity: 1;
 	font-family: "Brenner Mono";
+
+
+
+
