@@ -174,10 +174,10 @@ You probably want to change the styling.
 .sound1 {
 	background: linear-gradient(-45deg, #FF0000, #404040, #000000););
 	background-size: 400% 400%;
-	animation: achtergrondverandering 1s ease-in-out;
+	animation: Alarm 1s ease-in-out;
 }
 
-@keyframes achtergrondverandering {
+@keyframes Alarm {
 	0% {
 		background-position: 0 50%;
 	}
@@ -189,3 +189,31 @@ You probably want to change the styling.
 	}
 }
 
+.sound1 iframe {
+	transition: ease-in 1s;
+	animation: shake 0.7s;
+}
+
+.sound4 {
+	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
+	animation: AlarmTwee 1s ease-in-out;
+}
+
+.sound5 {
+	background: black;
+}
+
+.sound6 {
+	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
+	animation: AlarmTwee 1s ease-in-out;
+}
+
+.sound7 {
+	background: black;
+}
+
+@keyframes AlarmTwee {
+  to {
+    background-position:top left;
+  }
+ }
