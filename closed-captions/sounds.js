@@ -1,5 +1,6 @@
 // Hier kan je tijden toevoegen in secondes
-// Op die mommenten komt er een class op de body.
+// Op die mommenten komt er een class op de body. 
+// Getallen zijn de secondes, dus 0=0 seconde etc. 
 sounds = [
 	0,
 	9,
