@@ -21,6 +21,7 @@ body {
 	position: absolute;
 	margin-top: -4rem;
 	text-align: center;
+	color: #B29600;
 }
 
 #closed-captions .on {
@@ -45,21 +46,18 @@ body {
 	font-family: "Brenner Mono";
 	font-style: Normal;
 	font-weight: 400;
-	color: black;
 }
 
 .voice2 {
 	font-family: "Brenner Mono";
 	font-style: Normal;
 	font-weight: 400;
-	color: #B29600;
 }
 
 .voice3 {
 	font-family: "Brenner Mono Bold";
 	font-style: Normal;
 	font-weight: 400;
-	color: #0f4539;
 	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
   transform: translate3d(0, 0, 0);
 }
@@ -88,7 +86,6 @@ body {
 	font-family: "Brenner Mono";
 	font-style: Normal;
 	font-weight: 400;
-	color: #5c1818;
 }
 
 /* deel 2 tekst */
@@ -205,7 +202,7 @@ You probably want to change the styling.
 
 .sound6 {
 	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
-	animation: AlarmTwee 1s ease-in-out;
+	animation: AlarmDrie 1s ease-in-out;
 }
 
 .sound7 {
@@ -214,7 +211,7 @@ You probably want to change the styling.
 
 .sound8 {
 	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
-	animation: AlarmTwee 1s ease-in-out;
+	animation: AlarmVier 1s ease-in-out;
 }
 
 .sound9 {
@@ -222,6 +219,18 @@ You probably want to change the styling.
 }
 
 @keyframes AlarmTwee {
+  to {
+    background-position:top left;
+  }
+ }
+
+ @keyframes AlarmDrie {
+  to {
+    background-position:top left;
+  }
+ }
+
+@keyframes AlarmVier {
   to {
     background-position:top left;
   }
