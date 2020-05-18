@@ -212,6 +212,15 @@ You probably want to change the styling.
 	background: black;
 }
 
+.sound8 {
+	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
+	animation: AlarmTwee 1s ease-in-out;
+}
+
+.sound9 {
+	background: black;
+}
+
 @keyframes AlarmTwee {
   to {
     background-position:top left;
