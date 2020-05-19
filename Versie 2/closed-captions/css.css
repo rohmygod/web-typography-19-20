@@ -58,6 +58,25 @@ body {
 	font-family: "Brenner Mono";
 	font-style: Normal;
 	font-weight: 400;
+	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
 }
 
 
@@ -207,34 +226,13 @@ body {
 	transition: 0s;
 	font-weight: 400;
 	color: #B29600;
-	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
 }
 
 .p6.on span:nth-of-type(3) {
 	transition: 0s;
 	font-weight: 400;
 	color: #B29600;
-	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
 }
-
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(1px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-3px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(3px, 0, 0);
-  }
-}
-
 
 
 /* K: and dreadfully distinct against the dark, a tall white fountain played... */
@@ -684,7 +682,30 @@ body {
 	background: black;
 }
 
+
 .sound8 {
+	animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both infinite;
+}
+
+@keyframes shakeTwee {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.sound9 {
 	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
 	animation: AlarmVier 1s ease-in-out;
 }
@@ -695,7 +716,7 @@ body {
   }
  }
 
-.sound9 {
+.sound10 {
 	background: black;
 }
 
@@ -991,5 +1012,24 @@ body {
 	font-weight: 400;
 	color: #FFFFFF;
 }
-	
-	
+
+
+
+
+
+
+/* ------------------------------ SOUNDS IN DEEL 2 ----------------------------- */
+.sound10 {
+	animation: zoom 30s forwards;
+}
+
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1,1);
+    }
+    90% {
+        transform: scale(1.2,1.2);
+    }
+}
