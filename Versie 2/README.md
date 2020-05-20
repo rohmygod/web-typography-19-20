@@ -5,7 +5,7 @@ De feedback van Darice was dat het er op zich goed uit zag, maar er kon nog meer
 
 
 # `Aanpassing 1`
-Als eerste heb ik een soort alarm nagebootst door de achtergrond kleuren te veranderen. Ik heb dit op twee verschillende manieren gedaan. Het eerste alarm is een soort politie alarm waarbij ik een zwaailicht heb nagebootst. Bij het 2e alarm hoor je het van kant wisselen dus heb ik de 'lichtbundel' mee laten verschuiven. 
+Als eerste heb ik een soort alarm nagebootst door de achtergrond kleuren te veranderen. Ik heb dit op twee verschillende manieren gedaan. Het eerste alarm is een soort politie alarm waarbij ik een zwaailicht heb nagebootst. Bij het 2e alarm hoor je het van kant wisselen dus heb ik de 'lichtbundel' mee laten verschuiven. Die komt meerdere malen terug. 
 
 # `Aanpassing 2`
 Ik heb de ondertiteling een algemene kleur gegeven, omdat het verschil in kleur per personage toch op een of andere manier niet helemaal consistent voelde en je dan voor je gevoel ook bezig bent met het 'onthouden' van wie welke kleur is. Ik ben dus gegaan voor geel omdat dit goed opvalt in alle delen van de scene.
