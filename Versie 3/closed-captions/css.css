@@ -1,0 +1,1035 @@
+/* **********************************************
+Basic mechanics
+Hide all paragraphs by default
+Show them when they receive the class 'on'
+Hide them when they receive the class 'off'
+Feel free to adjust the defaults to your needs.
+********************************************** */
+
+body {
+	background-color: black;
+}
+
+#closed-captions {
+	display: flex;
+    justify-content: center;
+}
+
+#closed-captions p {
+	opacity: 0;
+	transition: .05s;
+	position: absolute;
+	margin-top: -4rem;
+	text-align: center;
+	color: #B29600;
+}
+
+#closed-captions .on {
+	opacity: 1;
+}
+
+#closed-captions .off {
+	transition: .2s;
+	opacity: 0;
+}
+
+#video-placeholder {
+	 height: 85vh;
+    width: 130vh;
+    display: flex;
+    margin: auto;
+    margin-top: 7vh;
+}
+
+/*  ------------------------------ OPMAAK PER STEM  ------------------------------*/
+.voice1 {
+	font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+}
+
+.voice2 {
+	font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+}
+
+.voice3 {
+	font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+
+.voice4 {
+	font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+}
+
+
+
+
+/*  --------------- SPANS EN KLEUR VOOR PERSOON DIE SPREEKT DEEL 1 ---------------*/
+
+
+/* Interviewer: officer K D 6 - 3 . 7. Let’s begin. Ready? */
+.p0 span {
+	opacity: 0;
+	font-family: "Brenner Mono";
+}
+.p0.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.p0.on span:nth-of-type(2) {
+	opacity: 1;
+	transition: 0s .4s;
+	margin-right: -.25em;
+	font-weight: 400;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(3) {
+	opacity: 1;
+	transition: 0s .5s;
+	margin-right: -.25em;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(4) {
+	opacity: 1;
+	transition: 0s .7s;
+	margin-right: -.25em;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(5) {
+	opacity: 1;
+	transition: 0s 1.1s;
+	margin-right: -.25em;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(6) {
+	opacity: 1;
+	transition: 0s 1.4s;
+	margin-right: -.25em;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(7) {
+	opacity: 1;
+	transition: 0s 1.7s;
+	margin-right: -.25em;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(8) {
+	opacity: 1;
+	transition: 0s 2s;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(9) {
+	opacity: 1;
+	transition: 0s 2s;
+	font-weight: 200;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(10) {
+	opacity: 1;
+	font-family: "Brenner Mono";
+}
+.p0.on span:nth-of-type(11) {
+	opacity: 1;
+	font-family: "Brenner Mono";
+}
+
+
+
+/* K: yes, sir. */
+.p1.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: recite your baseline. */
+.p2.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: and blood-black nothingness began to spin. */
+.p3.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: a system of cells interlinked within cells, */
+.p4.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked within cells, interlinked within one stem. */
+.p5.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+
+/* Cop: fuck off, skin-job! */
+.p6.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.p6.on span:nth-of-type(2) {
+	transition: 0s;
+	font-weight: 400;
+	color: #B29600;
+}
+
+.p6.on span:nth-of-type(3) {
+	transition: 0s;
+	font-weight: 400;
+	color: #B29600;
+}
+
+
+/* K: and dreadfully distinct against the dark, a tall white fountain played... */
+.p7.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: cells. */
+.p8.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p9.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: have you ever been in an institution? */
+.p10.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: cells. */
+.p11.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p12.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: Interviewer: do they keep you in a cell? */
+.p13.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: cells. */
+.p14.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p15.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: Interviewer: when you're not performing your duties, do they keep you in a little box? */
+.p16.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: cells. */
+.p17.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p18.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked. */
+.p19.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p20.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: what's it like to hold the hand of someone you love? */
+.p21.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked. */
+.p22.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p23.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: did they teach you how to feel, finger to finger? */
+.p24.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked. */
+.p25.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p26.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: do you long for having your heart interlinked? */
+.p27.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked.  */
+.p28.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p29.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: do you dream about being interlinked? */
+.p30.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p31.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: what's it like to hold your child in your arms? */
+.p32.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked. */
+.p33.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p34.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: do you feel that there's a part of you that's missing? */
+.p35.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked. */
+.p36.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p37.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+/* Interviewer: within cells interlinked. */
+.p38.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: within cells interlinked. */
+.p39.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: why don't you say that three times: "within cells interlinked" */
+.p40.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: within cells interlinked. */
+.p41.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: within cells interlinked. */
+.p42.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: within cells interlinked. */
+.p43.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: we're done. */
+.p44.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: constant K. */
+.p45.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: you can pick up your bonus. */
+.p46.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: Thank you, sir. */
+.p47.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+
+/* ------------------------------ SOUNDS IN DEEL 1 ----------------------------- */
+.sound0 {
+	animation: shakeTwee 1s ease-in-out;
+}
+
+@keyframes shakeTwee {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+
+.sound1 {
+	background: linear-gradient(-45deg, #FF0000, #404040, #000000););
+	background-size: 400% 400%;
+	animation: Alarm 1s ease-in-out;
+}
+
+@keyframes Alarm {
+	0% {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+.sound1 iframe {
+	transition: ease-in 1s;
+	animation: shake 0.7s;
+}
+
+.sound4 {
+	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
+	animation: AlarmTwee 1s ease-in-out;
+}
+
+@keyframes AlarmTwee {
+  to {
+    background-position:top left;
+  }
+ }
+
+.sound5 {
+	background: black;
+}
+
+.sound6 {
+	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
+	animation: AlarmDrie 1s ease-in-out;
+}
+
+
+ @keyframes AlarmDrie {
+  to {
+    background-position:top left;
+  }
+ }
+
+.sound7 {
+	background: black;
+}
+
+
+.sound8 {
+	animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both infinite;
+}
+
+@keyframes shakeTwee {
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.sound9 {
+	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
+	animation: AlarmVier 1s ease-in-out;
+}
+
+@keyframes AlarmVier {
+  to {
+    background-position:top left;
+  }
+ }
+
+.sound10 {
+	background: black;
+}
+
+
+
+
+
+
+
+
+
+
+/*  --------------- SPANS EN KLEUR VOOR PERSOON DIE SPREEKT DEEL 2 ---------------*/
+/* Interviewer: cells */
+.p48.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p49.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: have you ever been in an institution. Cells. */
+.p50.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p51.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+/* Interviewer: when you're not performing your duties, do they keep you in a little box? Cells. */
+.p52.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: cells. */
+.p53.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked. What’s it like to hold the hand of someone you love? */
+.p54.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: interlinked.  */
+.p55.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: interlinked. */
+.p56.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+/* Interviewer: within cells interlinked. */
+.p57.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: within cells interlinked. */
+.p58.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: dreadfully. */
+.p59.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: dreadfully. */
+.p60.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: what's it like to be filled with dread? Dreadfully. */
+.p61.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: dreadfully. */
+.p62.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: do you like being separated from other people? Distinct. */
+.p63.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: distinct. */
+.p64.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: dreadfully distinct. */
+.p65.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: dreadfully distinct. */
+.p66.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: dark. */
+.p67.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: dark. */
+.p68.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: within cells interlinked. */
+.p69.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* K: within cells interlinked. */
+.p70.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* Interviewer: withing one stem. */
+.p71.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+/* K: withing one stem. */
+.p72.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+/* Interviewer: and dreadfully distinct. */
+.p73.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+	
+
+/* K: and dreadfully distinct. */
+.p74.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+	
+
+/* Interviewer: against the dark. */
+.p75.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+	
+
+/* K: against the dark. */
+.p76.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+	
+
+/* Interviewer: a tall white fountain played. */
+.p77.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+	
+
+/* K: a tall white fountain played. */
+.p78.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+	
+
+/* Interviewer: you're not even close to baseline. */
+.p79.on span:first-of-type {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+/* ------------------------------ SOUNDS IN DEEL 2 ----------------------------- */
+.sound10 {
+	animation: zoom 30s forwards;
+}
+
+
+
+@keyframes zoom {
+    0% {
+        transform: scale(1,1);
+    }
+    90% {
+        transform: scale(1.2,1.2);
+    }
+}
