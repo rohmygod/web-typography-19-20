@@ -19,7 +19,7 @@ body {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-	margin-top: -4rem;
+	margin-top: -6.5rem;
 	text-align: center;
 	color: #B29600;
 }
@@ -609,6 +609,7 @@ body {
 	animation: shakeTwee 1s ease-in-out;
 }
 
+
 @keyframes shakeTwee {
   10%, 90% {
     transform: translate3d(-10px, 0, 0);
@@ -626,7 +627,6 @@ body {
     transform: translate3d(3px, 0, 0);
   }
 }
-
 
 .sound1 {
 	background: linear-gradient(-45deg, #FF0000, #404040, #000000););
@@ -649,6 +649,27 @@ body {
 .sound1 iframe {
 	transition: ease-in 1s;
 	animation: shake 0.7s;
+}
+
+.sound2 {
+background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED1515) right/200%;
+	animation: politie 1s ease-in-out;
+}
+
+@keyframes politie {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.sound3 {
+	background: black;
 }
 
 .sound4 {
@@ -1033,3 +1054,6 @@ body {
         transform: scale(1.2,1.2);
     }
 }
+
+
+
