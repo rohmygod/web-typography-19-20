@@ -19,7 +19,7 @@ body {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-	margin-top: -6.5rem;
+	margin-top: -5.5rem;
 	text-align: center;
 	color: #B29600;
 }
@@ -609,6 +609,20 @@ body {
 	animation: shakeTwee 1s ease-in-out;
 }
 
+.sound0:before {
+   content: "[LOW THRILLING]";
+   font-family: "Brenner Mono";
+	font-weight: 400;
+	text-align: center;
+	color: #B29600;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
+}
+
 
 @keyframes shakeTwee {
   10%, 90% {
@@ -632,6 +646,20 @@ body {
 	background: linear-gradient(-45deg, #FF0000, #404040, #000000););
 	background-size: 400% 400%;
 	animation: Alarm 1s ease-in-out;
+}
+
+.sound1:before {
+   content: "[ALARM]";
+   font-family: "Brenner Mono";
+	font-weight: 400;
+	text-align: center;
+	color: #B29600;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
 }
 
 @keyframes Alarm {
@@ -668,8 +696,26 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 	}
 }
 
+.sound2:before {
+   content: "[POLICE ALARM]";
+   font-family: "Brenner Mono";
+	font-weight: 400;
+	text-align: center;
+	color: #B29600;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
+}
+
 .sound3 {
 	background: black;
+}
+
+.sound3:before {
+   content: "";
 }
 
 .sound4 {
@@ -683,8 +729,26 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
   }
  }
 
+ .sound2:before {
+   content: "[ALARM]";
+   font-family: "Brenner Mono";
+	font-weight: 400;
+	text-align: center;
+	color: #B29600;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
+}
+
 .sound5 {
 	background: black;
+}
+
+.sound2:before {
+   content: "";
 }
 
 .sound6 {
@@ -698,6 +762,20 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
     background-position:top left;
   }
  }
+
+ .sound2:before {
+   content: "[ALARM]";
+   font-family: "Brenner Mono";
+	font-weight: 400;
+	text-align: center;
+	color: #B29600;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 6rem;
+}
 
 .sound7 {
 	background: black;
@@ -1041,19 +1119,17 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 
 /* ------------------------------ SOUNDS IN DEEL 2 ----------------------------- */
 .sound10 {
-	animation: zoom 30s forwards;
+	animation: zoom 42s forwards;
 }
-
-
 
 @keyframes zoom {
     0% {
         transform: scale(1,1);
     }
-    90% {
+    99% {
         transform: scale(1.2,1.2);
     }
+    100% {
+    	transform: scale(1,1);
+    }
 }
-
-
-
