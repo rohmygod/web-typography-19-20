@@ -73,7 +73,7 @@ Ik heb de sounds ook met ondertiteling aangegeven. Darice zei namelijk dat ze do
 # `Principes`
 Aan het begin van dit vak heeft Vasilis een aantal principes uitgelegt waar rekening mee gehouden moest worden. Hieronder leg ik uit wat ik per principe precies gedaan heb. 
 
-1. <b>Study situation:<b> zoals ik eerder al omschreven heb, heb ik om te beginnen een gesprek met Darice gehad. Hierbij ben ik meer te weten gekomen over haar maar ook over het doof zijn zelf. Vervolgens heb ik me zelf proberen in te leven hoe het is om doof te zijn, door de video zonder geluid of iets te bekijken. Dat bleek echt nog wel moeilijker dan ik had verwacht! Dit in combinatie met mijn eigen identiteit, heeft een goed beeld van de situatie in kaart gebracht. 
+1. <b>Study situation:</b> zoals ik eerder al omschreven heb, heb ik om te beginnen een gesprek met Darice gehad. Hierbij ben ik meer te weten gekomen over haar maar ook over het doof zijn zelf. Vervolgens heb ik me zelf proberen in te leven hoe het is om doof te zijn, door de video zonder geluid of iets te bekijken. Dat bleek echt nog wel moeilijker dan ik had verwacht! Dit in combinatie met mijn eigen identiteit, heeft een goed beeld van de situatie in kaart gebracht. 
 
 2. <b>Ignore conventions:</b> de conventies die er zijn over film is dat de gefilmde scenes bewegen, maar verder het beeld gewoon moet blijven staan. Er word al wel gewerkt met gevoel zoals trillingen en geluid wat all-around is, maar dat werkt natuurlijk niet als je geen geluid hebt en vanaf je laptop kijkt! Daarom heb ik het stilstaande beeld genegeerd, en het iframe laten bewegen. Ook namen zie je vaak niet in ondertiteling, maar is voor doven of slechthorenden dus wel echt belangrijk! Hetzelfde geldg voor geluid omschrijvingen. 
 
