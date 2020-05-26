@@ -1286,7 +1286,7 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 }
 
 .sound12 {
-	animation: wave 15s;
+	animation: wave 16s;
 }
 
 .sound12:before {
@@ -1419,4 +1419,24 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 	}
 }
 
+.sound15 {
+	badkground: black;
+}
+
+.sound15:before {
+	content: '🔇 - SILENCE';
+     background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 43vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
 
