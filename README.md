@@ -72,8 +72,6 @@ Zoals terug te zien is in de readme van de andere versies heb ik best wel wat aa
 Ik heb de sounds ook met ondertiteling aangegeven. Darice zei namelijk dat ze door de bewegingen weet dat er een geluid is, maar het te vaag is om te weten wat voor geluid het precies is. Daarom, met een omschrijving, word het een stuk duideijker. Ik heb er voor gekozen om deze in een semi transparant blok onderaan de video weer te geven. Dit omdat het zo niet de hele tijd in beeld is, maar je toch gemakkelijk kan zien wat voor geluidsomschrijving er staat. Om het visueel wat sterker te maken heb ik emoji's gebruikt om wat meer gevoel / beeld erbij te geven. En een kapitale tekst om zo onderscheid te maken van de andere ontertiteling. 
 
 
-
-
 <b>Achtergrond animaties</b>
 1. In het begin van de film is een alarm te horen, dit klinkt als een soort alarm dat deuren gaan sluiten of er iets omgeroepen word. Je ziet dat dit met een rood licht gedaan word, daarom heb ik een rode achtergrond gemaakt die het idee van een alarm nabootst met beweging. Deze komt een paar keer terug, en om consistent te blijven gebruik ik daarvoor steeds dezelfde animatie. 
 
@@ -81,7 +79,12 @@ Ik heb de sounds ook met ondertiteling aangegeven. Darice zei namelijk dat ze do
 
 3. Tot slot heb ik op het einde geprobeerd om een mysterieus licht van achter de video te laten verschijnen. Het is namelijk een mysterieus muziekje, dus dit past er goed bij. 
 
+<b>iFrame animaties</b>
+1. Ik heb aan het begin een soort hobbel effect toegevoegd zodat het past bij het beeld van het geluid en het meer effect geeft aan de film.
 
+2. Vervolgens kom je bij een soort piepgeluid, wat steeds harder word. Daarbij heb ik gekozen om het beeld in te laten zoomen zodat je merkt dat er iets 'groter' word, en daarna gaat deze op de piep abrupt terug naar normaal beeld. Zo is duidelijk dat de piep gestopt is. 
+
+3. In het 2e deel hoor je een soort vaag muziekje, die zachter en harder gaat. Ik laat het beeld op dit geluid meebewegen en vervolgens in het 2e beeld gebeurd dit ook. Tussendoor word het onderbroken door een soort alarm wekker, daar beweegd het beeld ook op mee.
 
 
 # `Principes`
