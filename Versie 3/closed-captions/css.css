@@ -58,7 +58,7 @@ body {
 	font-family: "Brenner Mono";
 	font-style: Normal;
 	font-weight: 400;
-	animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both infinite;
+	animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both infinite;
 }
 
 @keyframes shake {
@@ -222,16 +222,19 @@ body {
 	color: #FFFFFF;
 }
 
+
 .p6.on span:nth-of-type(2) {
+	opacity: 1;
 	transition: 0s;
 	font-weight: 400;
-	color: #B29600;
+	color: #FF0000;
 }
 
 .p6.on span:nth-of-type(3) {
+	opacity: 1;
 	transition: 0s;
 	font-weight: 400;
-	color: #B29600;
+	color: #FF0000;
 }
 
 
@@ -549,23 +552,44 @@ body {
 }
 
 
-/* K: within cells interlinked. */
-.p42.on span:first-of-type {
+/* within cells interlinked. */
+.p42.on {
 	opacity: 1;
-	transition: 0s;
+	transition: 0;
 	font-weight: 400;
-	color: #FFFFFF;
+	color: #B29600;
+	left: 20vw;
+	animation: verschijnverdwijn 1s;
+}
+
+@keyframes verschijnverdwijn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* within cells interlinked. */
+.p43.on {
+	opacity: 1;
+	transition: 0;
+	font-weight: 400;
+	color: #B29600;
+	left: 60vw;
+	animation: verschijnverdwijn 1s;
 }
 
 
-/* K: within cells interlinked. */
-.p43.on span:first-of-type {
-	opacity: 1;
-	transition: 0s;
-	font-weight: 400;
-	color: #FFFFFF;
+@keyframes verschijnverdwijn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
 
 /* Interviewer: we're done. */
 .p44.on span:first-of-type {
@@ -610,17 +634,20 @@ body {
 }
 
 .sound0:before {
-   content: '[blabla]';
-    position: absolute;
-    top: 0;
-    left: -10px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 22px solid #b46b78;
-    border-bottom: 22px solid #b46b78;
-    border-left: 10px solid transparent;
+	content: '🔊 - LOW THRILLING';
+	background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 43vw;
+    justify-content: center;
     z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
 }
 
 
@@ -643,22 +670,25 @@ body {
 }
 
 .sound1:before {
-   content: '[test 2]';
-    position: absolute;
-    top: 0;
-    left: -10px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 22px solid #b46b78;
-    border-bottom: 22px solid #b46b78;
-    border-left: 10px solid transparent;
+  content: '🚨 - ALARM';
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 45vw;
+    justify-content: center;
     z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
 }
 
 
 .sound1 {
-	background: linear-gradient(-45deg, #FF0000, #404040, #000000););
+	background: linear-gradient(-45deg, #FF0000, #404040, #000000);
 	background-size: 400% 400%;
 	animation: Alarm 1s ease-in-out;
 }
@@ -678,7 +708,7 @@ body {
 
 .sound1 iframe {
 	transition: ease-in 1s;
-	animation: shake 0.7s;
+	animation: shake .05s;
 }
 
 
@@ -701,17 +731,20 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 
 
 .sound2:before {
-   content: '[toedeloe]';
-    position: absolute;
-    top: 0;
-    left: -10px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 22px solid #b46b78;
-    border-bottom: 22px solid #b46b78;
-    border-left: 10px solid transparent;
+	content: '🚨👮 - POLICE ALARM'; 
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 42.5vw;
+    justify-content: center;
     z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
 }
 
 .sound3 {
@@ -719,22 +752,20 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 }
 
 .sound3:before {
-   content: "";
-}
-
-
-.sound4:before {
-   content: '[HALLLOO]';
-    position: absolute;
-    top: 0;
-    left: -10px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-top: 22px solid #b46b78;
-    border-bottom: 22px solid #b46b78;
-    border-left: 10px solid transparent;
+    content: '🔊 - LOW THRILLING';
+	background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 43vw;
+    justify-content: center;
     z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
 }
 
 .sound4 {
@@ -748,12 +779,43 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
   }
  }
 
+.sound4:before {
+   content: '🚨 - ALARM';
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 45vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+
 .sound5 {
 	background: black;
 }
 
-.sound2:before {
-   content: "";
+.sound5:before {
+   content: '💬 - PEOPLE TALKING IN THE BACKGROUND';
+  background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 35vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
 }
 
 .sound6 {
@@ -768,10 +830,44 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
   }
  }
 
+.sound6:before {
+	content: '🚨 - ALARM';
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 45vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+
 .sound7 {
 	background: black;
 }
 
+.sound7:before {
+ content: '💬 - PEOPLE TALKING IN THE BACKGROUND';
+  background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 35vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
 
 .sound8 {
 	animation: shake 0.3s cubic-bezier(.36,.07,.19,.97) both infinite;
@@ -795,6 +891,23 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
   }
 }
 
+.sound8:before {
+	content: '🔊 - HARD THRILLING';
+	background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 43vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
 .sound9 {
 	background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #ffb3b3 4%, #ff3333 12.25%, #800000 31.25%, #b30000 50%) top right/200% 200%;
 	animation: AlarmVier 1s ease-in-out;
@@ -806,17 +919,22 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
   }
  }
 
-.sound10 {
-	background: black;
+.sound9:before {
+	content: '🚨 - ALARM';
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 45vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
 }
-
-
-
-
-
-
-
-
 
 
 /*  --------------- SPANS EN KLEUR VOOR PERSOON DIE SPREEKT DEEL 2 ---------------*/
@@ -879,6 +997,13 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 	transition: 0s;
 	font-weight: 400;
 	color: #FFFFFF;
+}
+
+.p54.on span:nth-of-type(13) {
+	opacity: 1;
+	transition: 0s;
+	font-weight: 600;
+	color: #db2b2b;
 }
 
 
@@ -1110,7 +1235,8 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
 
 /* ------------------------------ SOUNDS IN DEEL 2 ----------------------------- */
 .sound10 {
-	animation: zoom 42s forwards;
+	animation: zoom 42.5s forwards;
+	background: black;
 }
 
 @keyframes zoom {
@@ -1124,3 +1250,173 @@ background: linear-gradient(to right, #FFFFFF, #1033E4, #657BE5, #E56565, #ED151
     	transform: scale(1,1);
     }
 }
+
+.sound10:before {
+	content: '🔊 - HIGH TONE GETTING LOUDER';
+  background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 38vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+.sound11:before {
+	content: '🔇 - SILENCE';
+     background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 43vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+.sound12 {
+	animation: wave 15s;
+}
+
+.sound12:before {
+	content: '🎵 - TENSE MUSIC FADING IN AND OUT';
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 35vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+@keyframes wave {
+	0% {
+		transform: scale(0.9);
+	}
+	25% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+	75% {
+		transform: scale(1);
+	}
+	99.9% {
+		transform: scale(0.9);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+.sound13{
+	animation: bel 0.5s;
+}
+
+@keyframes bel {
+	0% {
+		transform: rotate(0.3deg);
+	}
+	20% {
+		transform: rotate(-0.3deg);
+	}
+	40% {
+		transform: rotate(0.3deg);
+	}
+	60% {
+		transform: rotate(-0.3deg);
+	}
+	80% { 
+		transform: rotate(0.3deg);
+	}
+	99%{
+		transform: rotate(-0.3deg);	
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.sound13:before {
+	content: '🔔 - RINGING BELL';
+   background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 40vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+
+.sound14:before {
+	content: '🎵 - MYSTERIOUS MUSIC FADING IN AND OUT';
+    background-color: #848e5b26;
+	padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 33vw;
+    justify-content: center;
+    z-index: 1;
+    color: #B29600;
+    font-family: "Brenner Mono";
+	font-style: Normal;
+	font-weight: 400;
+	transition: .05s;
+	transform: scale(.9);
+}
+
+.sound14 {
+  	background: radial-gradient(circle farthest-side, #f8ffe6, black);
+  	animation: beweeg 26s;
+}
+
+@keyframes beweeg {
+	0% {
+		transform: scale(0.95);
+	}
+	18% {
+		transform: scale(0.9);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	46% {
+		transform: scale(0.9);
+	}
+	55% {
+		transform: scale(0.9);
+	}
+	70% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.1);
+	}
+}
+
+
