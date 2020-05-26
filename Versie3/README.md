@@ -5,5 +5,6 @@ De feedback van Darice was dat het er al goed uit zag! De animaties waren duidel
 
 Zie mijn final readme op de home van mijn repository voor mijn eindwerk en eindaanpassingen!
 
+[Demo eindversie](https://rohmygod.github.io/web-typography-19-20/Versie3/closed-captions/index.html)
 
 

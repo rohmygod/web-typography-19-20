@@ -1,4 +1,6 @@
 # `Versie 2`
+[Demo versie 2](https://rohmygod.github.io/web-typography-19-20/Versie2/closed-captions/index.html)
+
 
 # `Feedback Darice op versie 1`
 De feedback van Darice was dat het er op zich goed uit zag, maar er kon nog meer. Ik heb gevraagd in hoeverre ik ook animaties op de achtergrond kon doen, omdat ik twijfelde wanneer het teveel was en je de film niet meer kon volgen. Zij gaf aan dat je qua kleur wel van alles op de achtergrond kan doen, teveel beeld word mogelijk verwarrend.
